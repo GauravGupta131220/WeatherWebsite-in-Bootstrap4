@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Practice </title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+                <!-- header section -->
+
+                <div class="row" style="height: 150px; background-color: #e3e3e3; ">
+                    <div class="col-md-12">
+                        <h3 class="text-center" style="line-height: 150px;">
+                            The Daily Weather
+                        </h3>
+                    </div>
+                </div>
+                
+                <!-- navigation bar -->    
+                <div class="row">
+                    <nav class="navbar navbar-toggleable-xl">
+                        <a class="navbar-brand" class="active" href="#">Home</a>
+                        <a class="navbar-brand" href="forecast.html">Forecasts & Reports</a>
+                        <a class="navbar-brand" href="#">News & Video</a>
+                        <a class="navbar-brand" href="#">Climate</a>
+                        <a class="navbar-brand" href="#">Social</a>
+                    </nav>
+                </div>
+                
+
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide bg-inverse" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                      
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block img-fluid ml-auto mr-auto" src="img/carousel1.jpg" alt="First slide">
+                            <div class="carousel-caption">
+                              <h2>
+                                    The Daily Weather
+                            </h2>
+                            <h2>
+                                    India's No.1 Weather Website
+                            </h2>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid ml-auto mr-auto" src="img/carousel2.jpg" alt="Second slide">
+                            <div class="carousel-caption">
+                              <h3>TheDailyWeather Now Available in Mobile Applications</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid ml-auto mr-auto" src="img/carousel3.jpeg" alt="Third slide">
+                            <div class="carousel-caption">
+                              <h2>All news in one place</h2>
+                              
+                            </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                </div>
+                
+
+                <!-- 3 Column Section -->
+                <div class="container">
+                    <h3>Local Weather</h3>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img alt="Bootstrap Image Preview" src="img/pondicherry.png" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <blockquote>
+                                                <h3>Bangalore</h3>
+                                                <h4>Real Feel 27&deg;C</h4>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img alt="Bootstrap Image Preview" src="img/weather.png" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <blockquote>
+                                                <h3>Mumbai</h3>
+                                                <h4>Real Feel 35&deg;C</h4>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img alt="Bootstrap Image Preview" src="img/weather.png" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <blockquote>
+                                                <h3>Delhi</h3>
+                                                <h4>Real Feel 33&deg;C</h4>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 Column Section -->
+                <div class="container">
+                    <h3>weather News</h3>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img alt="Bootstrap Image Preview" src="img/heavy-rainfall.jpeg" />
+                                </div>
+                                <div class="col-md-5">
+                                    <h4>
+                                    Heavy rain triggers deadly river flooding in northeastern India, Nepal
+                                    </h4>
+                                    
+                                    <h5>
+                                    August 13, 2017, 11:30:27 AM EDT
+                                    </h5>
+                                    <p style="text-align: justify-all;">
+                                        Heavy rain targeted in northeastern India and Nepal, forcing the evacuations of more than 44,000 people and triggering deadly river flooding.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- 2 Column Section -->
+                <div class="container">
+                    <h3>weather News</h3>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-8">
+                                   <h4>
+                                    Shimla,India
+                                    </h4>
+                                    <h5>
+                                    Light Rain Showers
+                                    </h5>
+                                    <h5>
+                                    Feels like 23&deg;C
+                                    </h5>
+                                    <p>
+                                    Thunderstorms in the evening with fewer in the evening
+                                    </p>
+                                    <p> POP: 60%</p>
+                                    <p>Rain: < 1mm</p>
+                                    <p>Wind: 9 km/hr</p>
+                                    <p>Humidity: 93%</p>
+                                </div>
+
+                                <div class="col-md-4">
+                                       <img alt="Bootstrap Image Preview" src="img/shimla.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Temperature Table -->
+                <div class="container">
+                            <div class="row">
+                        <h3>India Weather Conditions</h3>
+                        <hr/>
+                        <div class="col-md-12">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            City
+                                        </th>
+                                        <th>
+                                            Actual (in &deg;C)
+                                        </th>
+                                        <th>
+                                            Real Feel (in &deg;C)
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Ahembdabad
+                                        </td>
+                                        <td>
+                                            35
+                                        </td>
+                                        <td>
+                                            39
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Bengaluru
+                                        </td>
+                                        <td>
+                                            26
+                                        </td>
+                                        <td>
+                                            25
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Bhopal
+                                        </td>
+                                        <td>
+                                            31
+                                        </td>
+                                        <td>
+                                            34
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Chandigarh
+                                        </td>
+                                        <td>
+                                            33
+                                        </td>
+                                        <td>
+                                            36
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Pune
+                                        </td>
+                                        <td>
+                                            28
+                                        </td>
+                                        <td>
+                                            30
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>  
+            </div>
+
+
+            <div class="container">
+
+                <div class="row">
+                    <h3>One Application Multiple Platforms</h3>
+                    <hr/>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img alt="Bootstrap Image Preview" src="img/callout-weather.jpg" />
+                                <blockquote> <p>TheDailyWeather.com</p>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-4">
+                                <img alt="Bootstrap Image Preview" src="img/callout-mobile-downloads.jpg" />
+                                <blockquote>
+                                <p>TheDailyWeather Mobile Downloads</p>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-4">
+                                <img alt="Bootstrap Image Preview" src="img/enterprise.jpg" />
+                                <blockquote>
+                                <p>TheDailyWeather Enterprise Solutions</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+
+
+   
+    <!-- footer outside the parent div -->
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <!-- Copyright -->
+                <div class="cRight col-md-2 ">
+                    <h6>Copyright &copy; 2017 <br>The Daily Weather</h6>
+                </div>
+                <!-- About us section -->
+                <div class="aboutUs col-md-4 ">
+                    <h5>About Us</h5>
+                    <p>We're immensely proud of the unique products that our community and meteorologists have created to improve people's access to meaningful weather data from around the globe since 2015</p>
+                </div>
+                <!-- Navigation Section -->
+                <div class="navigation col-md-3 ">
+                    <h5>Navigation</h5>
+                    <ul class=noStyle>
+                        <li a href="# ">Home</li>
+                        <li a href="# ">Services</li>
+                        <li a href="# ">link</li>
+                        <li a href="# ">Contact</li>
+                    </ul>
+                </div>
+                <!-- Follow us -->
+                <div class="link col-md-3 ">
+                    <h5>Follow Us</h5>
+                    <ul class="noStyle ">
+                        <li a href="# "><img src="img/twitter.png ">&nbsp;Twitter</li>
+                        <li a href="# "><img src="img/fb.png "> &nbsp;Facebook</li>
+                        <li a href="# "><img src="img/ggp.png "> &nbsp; Google Plus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
