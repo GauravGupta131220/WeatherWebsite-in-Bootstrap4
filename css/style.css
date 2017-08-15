@@ -1,12 +1,18 @@
-
+html{
+    font-size: 8px;
+}
 
 /**
  * carousel section
  */
-.CarouselSection{
+.CarouselSection,
+.cityName{
     margin-top: 5rem;
 }
 
+/**
+ * carousel
+ */
 .innerItems h2,h3{
     color: #ca4529;
 }
@@ -28,7 +34,9 @@ footer {
 .weather,
 .capitalTemperature,
 .temperatureTable,
-.platforms{
+.platforms,
+.cWeather,
+.stories{
 margin-top: 2rem;
 }
 
@@ -63,8 +71,13 @@ color: #5a504e;
 /**
  * weather
  */
-.weather span{
+.weather span,
+.details{
     color: #a8a3a2;
+}
+
+.details{
+    padding-top: 4rem;
 }
 /**
  * weather
@@ -97,6 +110,10 @@ color: #5a504e;
 .temperatureTable h3{
     color: #5a504e;
 }
+
+.cityName h2{
+    color: #5a504e;
+}
 /**
  * table
  */
@@ -110,16 +127,38 @@ color: #5a504e;
     background-color: #d08c24;
 }
 
+/**
+ * platform
+ */
 .platforms h3{
     color: #5a504e;
 }
-
+/**
+ * platform
+ */
 .platforms img{
     width: 100%;
 }
-
+/**
+ * platform
+ */
 .platforms p{
     margin-top: 1rem;
+}
+/**
+ * platform
+ */
+.forecastDetail h1{
+    text-align: left;
+    line-height: 15rem;
+}
+
+.stories h3{
+    color: #5a504e;
+}
+
+.stories img{
+    width: 100%;
 }
 /**
  * 
@@ -157,4 +196,49 @@ ul.noStyle {
 .navigation h5,
 .link h5 {
     color: orange;
+}
+
+/**
+ * [media description]
+ * @param  {[type]} min-width: 33.9em        [description]
+ * @return {[type]}            [description]
+ */
+@media (min-width: 33.9em) { 
+
+         html {
+        font-size: 10px;
+      }
+
+
+ }
+/**
+ * Small devices (phones, tablets less than 48em)
+  */
+@media (min-width: 47.9em) {
+     html {
+    font-size: 12px;
+  }
+}
+
+/**
+ * Medium devices (tablets, small laptops less than 62em)
+ 
+ */
+@media (min-width: 61.9em) {
+    html {
+    font-size: 14px;
+  }
+
+ }
+
+/**
+ * Large devices (desktops, screens less than 75em)
+ * @param  {[type]} max-width: 74.9em        [description]
+ * @return {[type]}            [description]
+ */
+@media (min-width: 74.9em) {
+      
+html {
+    font-size: 16px;
+  }
 }

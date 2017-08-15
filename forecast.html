@@ -5,6 +5,7 @@
     <title> Practice </title>
     <meta charset="utf-8">
     <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -14,61 +15,123 @@
 
 <body>
     <div class="container">
-        <!-- page header -->
-        <div class="row">
-            <h1 style="padding: 3rem 0 3rem 1rem;">Forecasts & Reports</h1>
-        </div>
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-toggleable-xl navbar-inverse bg-primary">
-            <a class="navbar-brand" class="active" href="home.html">Home</a>
-            <a class="navbar-brand" href="#">Forecasts & Reports</a>
-            <a class="navbar-brand" href="#">News & Video</a>
-            <a class="navbar-brand" href="#">Climate</a>
-            <a class="navbar-brand" href="#">Social</a>
-        </nav>
-        <form style="margin-top: 2rem;">
-            <input type="text" name="search" placeholder="Search for Location or Keyword">
-        </form>
-        <h1 style="margin-top: 2rem;">
-			Noida, Uttar Pradesh
-		</h1>
-        <div class="well col-md-6" style="margin-top: 2rem; background-color: #e3e3e3">
-            <h3>Current Weather</h3>
-            <img src="img/weather.png" style="float:left;">
-            <h3 style="padding-left: 3rem; line-height: 3rem">31&deg;C &nbsp; View Forecast >></h3>
-        </div>
-        <div class="row" style="margin-top: 2rem">
-            <img src="img/noida.png" style="width: 100rem;">
-        </div>
-        <div class="row" style="margin-top: 2rem">
-            <h1 style="color: #1f384d">Other Latest Stories</h1>
-        </div>
-        <!-- for latest stories -->
-        <div class="statistics row" style="margin-top: 2rem">
-            <div class="col-md-3">
-                <img src="img/mumbai.jpg" />
-                <blockquote> Mumbai Rains all set to intensify by this Weekend </blockquote>
-            </div>
-            <div class="col-md-3">
-                <img src="img/kolkata.jpg" />
-                <blockquote> Kolkata to continue witnessing rains with reduced intensity</blockquote>
-            </div>
-            <div class="col-md-3">
-                <img src="img/hyderabad.jpg" />
-                <blockquote>Monsoon rains to pick up pace over Hyderabad</blockquote>
-            </div>
-            <div class="col-md-3">
-                <img src="img/24hrs.jpg" />
-                <blockquote> Southwest Monsoon forecast for August 9 across India</blockquote>
-            </div>
-        </div>
+        <!-- fixed navigation bar -->    
+                <div class="container">
+                    <nav class="navbar container navbar-toggleable-sm fixed-top navbar-inverse bg-inverse">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                    <a class="navbar-brand" href="#" style="color: orange">TheDailyWeather</a>
+                    
+                    <div class="collapse navbar-collapse" id="navbar1">
+                        <ul class="navbar-nav justify-all">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" class="active" href="#">Forecasts & Reports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News & Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Climate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Social</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                <!-- city name -->
+                <div class="container cityName">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-left">
+                                Noida, Uttar Pradesh
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- jumbotron -->
+                <div class="jumbotron cWeather">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h3>
+                                                Current Weather
+                                            </h3><img alt="Bootstrap Image Preview" src="img/weather.png" />
+                                        </div>
+                                        <div class="col-md-4 forecastDetail">
+                                            <h1>
+                                                31&deg;Celcius
+                                            </h1>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 details">
+                                    <h4>Precipitaion: 0%</h4>
+                                    <h4>Humidity: 59%</h4>
+                                    <h4>Wind: 14 km/h</h4>
+                                    <h4>Expected to Rain at night</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- stories section-->
+                <div class="container stories ">
+                    <h3><strong>Other Lates Stories</strong></h3>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img alt="Bootstrap Image Preview" src="img/mumbai.jpg"/>
+                                    <blockquote>
+                                        Mumbai Rains all set to intensify by this Weekend 
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-3">
+                                    <img alt="Bootstrap Image Preview" src="img/kolkata.jpg" />
+                                    <blockquote>
+                                        Kolkata to continue witnessing rains with reduced intensity
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-3">
+                                    <img alt="Bootstrap Image Preview" src="img/hyderabad.jpg"/>
+                                    <blockquote>
+                                       Monsoon rains to pick up pace over Hyderabad
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-3">
+                                    <img alt="Bootstrap Image Preview" src="img/24hrs.jpg"/>
+                                    <blockquote>
+                                        Southwest Monsoon forecast for August 9 across India
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
     </div>
+
     <!-- footer outside the parent div -->
-    <footer style="margin-top: 2rem">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="cRight col-md-2">
-                    <h5>Copyright &copy; 2017 <br>The Daily Weather</h5>
+                    <h6>Copyright &copy; 2017 <br>The Daily Weather</h6>
                 </div>
                 <div class="aboutUs col-md-4">
                     <h5>About Us</h5>
