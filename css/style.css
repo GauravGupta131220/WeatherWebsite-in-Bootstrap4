@@ -1,8 +1,19 @@
-.header {
-    padding: 3rem 0 3rem 1rem;
+
+
+/**
+ * carousel section
+ */
+.CarouselSection{
+    margin-top: 5rem;
 }
 
+.innerItems h2,h3{
+    color: #ca4529;
+}
 
+/**
+ * footer
+ */
 footer {
     background: #333;
     color: #eee;
@@ -10,22 +21,137 @@ footer {
     padding: 20px;
 }
 
+/**
+ * margin top
+ */
+.localWeather,
+.weather,
+.capitalTemperature,
+.temperatureTable,
+.platforms{
+margin-top: 2rem;
+}
 
+/**
+ * local weather section
+ */
+.localWeather blockquote{ 
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/**
+ * local weather section
+ */
+.localWeather h3{
+color: #5a504e;
+}
+
+/**
+ * local weather section
+ */
+.localWeather h5{
+    color: #a8a3a2;
+}
+
+/**
+ * weather
+ */
+.weather h3{
+    color: #5a504e;
+}
+/**
+ * weather
+ */
+.weather span{
+    color: #a8a3a2;
+}
+/**
+ * weather
+ */
+.weather p{
+    text-align: justify-all;
+}
+
+/**
+ * capital
+ */
+.capitalTemperature h3{
+    color: #5a504e;
+}
+/**
+ * capital
+ */
+.capitalTemperature h4{
+    color: #d04024;
+}
+/**
+ * capital
+ */
+.capitalTemperature h5{
+    color: #a8a3a2;
+}
+/**
+ * table
+ */
+.temperatureTable h3{
+    color: #5a504e;
+}
+/**
+ * table
+ */
+.tableStyle {
+    margin-top: 1rem;
+}
+/**
+ * table
+ */
+.tableStyle thead{
+    background-color: #d08c24;
+}
+
+.platforms h3{
+    color: #5a504e;
+}
+
+.platforms img{
+    width: 100%;
+}
+
+.platforms p{
+    margin-top: 1rem;
+}
+/**
+ * 
+ * footer
+ */
 ul.noStyle {
     list-style: none;
     padding: 0px;
     font-size: 12px;
 }
 
+
+/**
+ * footer
+ */
 .link {
     line-height: 30px;
 }
 
+
+/**
+ * footer
+ */
 .aboutUs p {
     font-size: 12px;
     text-align: justify;
 }
 
+
+/**
+ * footer
+ */
 .cRight h6,
 .aboutUs h5,
 .navigation h5,
